@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+
+export PYBUILD_NAME=liteshort
+export PYBUILD_SYSTEM=distutils
+export PYBUILD_DISABLE=configure,test
+
+VERSION = $(VERSION)
+PACKAGEVERSION = $(VERSION)-0~$(DISTRIBUTION)0
+TARBALL = liteshort-$(VERSION).tar.gz
+URL = https://github.com/132ikl/liteshort
+
+%:
+	git clone --branch feature/package $(URL) liteshort/
+	dh $@ --with python3 --buildsystem=pybuild --sourcedirectory=debian/liteshort

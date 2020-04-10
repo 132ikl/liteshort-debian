@@ -1,0 +1,7 @@
+Source: liteshort 
+Maintainer: Steven Spangler <132@ikl.sh>
+Build-Depends: python3-all, dh-python, debhelper, python3-setuptools
+
+Package: liteshort
+Architecture: all
+Description: User-friendly, actually lightweight, and configurable URL shortener
