@@ -1,0 +1,4 @@
+package/debian/debhelper-build-stamp
+.pybuild/
+liteshort/
+liteshort*
