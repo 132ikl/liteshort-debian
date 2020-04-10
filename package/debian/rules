@@ -12,4 +12,3 @@ URL = https://github.com/132ikl/liteshort
 	mkdir -p debian/liteshort/etc/liteshort/
 	cp liteshort/setup/liteshort.ini debian/liteshort/etc/liteshort/
 	dh $@ --with python3 --buildsystem=pybuild -D liteshort/
-	dh_installsystemd
